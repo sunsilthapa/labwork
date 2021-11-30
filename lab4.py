@@ -2,4 +2,4 @@
 PI=3.14
 radius=float(input("Enter the radius:"))
 area=PI*radius*radius
-print("Area of circle is {} cm\u002".format(area))
+print("Area of circle is {} cm\u00b2".format(area))
