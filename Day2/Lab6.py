@@ -1,6 +1,6 @@
 #YOu live 4 miles from university. The bus drives at 25 mph but spends 2 minutes at each of the 10 stops on the way.
-#HOw long will the bus journey take? Alternatively, you could run to university. You jog the first mile at 7mph; then run the next two at 15mph; before 
-#jogging the last at 7mph againl Will this be quicker or slower than the bus?
+#HOw long will the bus journey take? Alternatively, you could run to university. You jog the first mile at 7mph;  
+#then run the next two at 15mph; beforejogging the last at 7mph again Will this be quicker or slower than the bus?
 
 distance=4
 a=25
@@ -12,7 +12,7 @@ t=x*60
 totalTime=t+stopTime
 print(f"The total time to reach university by bus is {totalTime}")
 
-#run with the speed of 7 mph
+#jogging with 7, 15 and 7mph
 b=7mph
 f=1/b
 time_1=f*60
