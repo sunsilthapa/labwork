@@ -2,28 +2,22 @@
 #HOw long will the bus journey take? Alternatively, you could run to university. You jog the first mile at 7mph;  
 #then run the next two at 15mph; beforejogging the last at 7mph again Will this be quicker or slower than the bus?
 
-distance=4
-a=25
-
 #bus stops at 10 places and spent 2 minutes
 stopTime=10*2
-x=1/a
-t=x*60
-totalTime=t+stopTime
-print(f"The total time to reach university by bus is {totalTime}")
+#time covered by bus in 4 miles with 25mph
+bustime=((4/25)*60)
+totalBusTime=bustime+stopTime
+print(f"The total time to reach university by bus is {totalBusTime}")
 
-#jogging with 7, 15 and 7mph
-b=7mph
-f=1/b
-time_1=f*60
-c=15
-g=1/c
-time_2=g*60
-d=7
-h=1/d
-time_3=h*60
-total_time2=time_1+time_2+time_3
-print(f"the total time for walking is{total_time2})
+#jogging with 7mph at 1mile, 15mph at 2mile and 7mph at 1mile
 
-if total_time2>totalTime:
-print(f"walking is fast to reach the univerity")
+time1=((1/7)*60)
+time2=((2/15)*60)
+time3=((1/7)*60)
+totalJoggingTime=time1+time2+time3
+print(f"the total time for walking is{totalJoggingTime}")
+
+if totalJoggingTime>totalBusTime:
+    print(f"walking is fast to reach the univerity")
+else:
+    print(f"going by bus is fast to reach the university")
